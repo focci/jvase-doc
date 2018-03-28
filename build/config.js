@@ -13,27 +13,27 @@ const config = {
 
     // html
     htmls: {
-        target_dir: '/htmls',
+        target_dir: '/html',
         dest_dir: '/'
     },
 
     // css
     styles: {
-        target_dir: '/styles',
-        dest_dir: '/styles',
+        target_dir: '/css',
+        dest_dir: '/static',
 
     },
 
     // js
     scripts: {
-        target_dir: '/scripts',
-        dest_dir: '/scripts',
+        target_dir: '/js',
+        dest_dir: '/static',
     },
 
     // 静态文件
     assets: {
-        target_dir: '/assets',
-        dest_dir: '/assets',
+        target_dir: '/static',
+        dest_dir: '/static',
     }
 };
 

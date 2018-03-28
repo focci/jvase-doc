@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+var htmlmin = require('gulp-htmlmin')
 var tempos = require('gulp-tempos');
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
@@ -24,6 +25,12 @@ gulp.task('htmls', function() {
     gulp.src([get_target_dir('htmls') + 'post/**/*.temp'])
         .pipe(tempos(null, {
             extname: '.html'
+        }))
+        .pipe(htmlmin({
+            removeComments: true, //清除HTML注释
+            collapseWhitespace: true, //压缩HTML
+            minfyJS: true,//压缩JS
+            minfyCss: true,//压缩CSS
         }))
         .pipe(gulp.dest(get_dest_dir('htmls')));
 });
