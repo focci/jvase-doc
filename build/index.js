@@ -17,24 +17,22 @@ var resolve = require('rollup-plugin-node-resolve');
 var replace = require('rollup-plugin-replace');
 var commonjs = require('rollup-plugin-commonjs');
 var browserSync = require('browser-sync');
-var extend = require('extend');
 var cfg = require('./config');
+var pkg = require('../package.json');
 
 // html
 gulp.task('htmls', function() {
-    gulp.src([get_target_dir('htmls') + 'post/**/*.temp'])
+    var tasks = gulp.src([get_target_dir('htmls') + 'post/**/*.temp'])
         .pipe(tempos(null, {
             extname: '.html'
-        }))
-        .pipe(htmlmin({
-            removeComments: true, //清除HTML注释
-            collapseWhitespace: true, //压缩HTML
-            minfyJS: true,//压缩JS
-            minfyCss: true,//压缩CSS
-        }))
-        .pipe(gulp.dest(get_dest_dir('htmls')));
+        }));
+    //
+    if (cfg.htmls.uglify.enabled) {
+        tasks = tasks.pipe(htmlmin(cfg.htmls.uglify.options));
+    }
+    // 
+    tasks.pipe(gulp.dest(get_dest_dir('htmls')));
 });
-
 
 // assets
 gulp.task('assets', function() {
@@ -43,70 +41,69 @@ gulp.task('assets', function() {
     );
 });
 
-
 // styles
 gulp.task('styles', function() {
-    return sass(get_target_dir('styles') + 'index.scss')
-        .pipe(concat(cfg.prj_name + '.css'))
-		.pipe(postcss([
-			autoprefixer({
-				browsers: [
-					'last 2 versions',
-					'last 2 Chrome versions',
-					'> 5%',
-					'> 5% in US',
-					'ie >= 9',
-					'Firefox >= 20',
-					'Firefox <= 20',
-					'iOS 7'
-				]
-			})
-		]))
-		.pipe(base64())
-		.pipe(nano())
-        .pipe(gulp.dest(get_dest_dir('styles')));
+    var tasks = sass(get_target_dir('styles') + cfg.styles.entry).pipe(concat(pkg.name + '.css'));
+    if (cfg.styles.autoprefixer.enabled) {
+        tasks.pipe(
+            postcss([
+                autoprefixer(cfg.styles.autoprefixer.options)
+            ])
+        );
+    }
+    if (cfg.styles.uglify) {
+        tasks = tasks.pipe(nano());
+    }
+    if (cfg.styles.base64) {
+        tasks = tasks.pipe(base64());
+    }
+	tasks.pipe(gulp.dest(get_dest_dir('styles')));
 });
-
 
 // scripts
 gulp.task('scripts', function() {
+    var plugins = [
+        json(),
+        resolve({
+            jsnext: true,
+            main: true
+        }),
+        commonjs({
+            ignoreGlobal: true
+        })
+    ];
+    if (cfg.scripts.babel.enabled) {
+        plugins.push( babel(cfg.scripts.babel.options) );
+    }
+    plugins.push(
+        replace({
+            exclude: 'node_modules/**',
+            ENV: JSON.stringify(process.env.NODE_ENV || 'development')
+        })
+    );
+
     var rollup_cfg = {
-        entry: get_target_dir('scripts') + 'index.js',
-        dest: get_dest_dir('scripts') + cfg.prj_name +'.js',
-        format: 'umd',
-        moduleName: cfg.prj_name,
-        sourceMap: true,
-        plugins: [
-            json(),
-            resolve({
-                jsnext: true,
-                main: true
-            }),
-            commonjs({
-                ignoreGlobal: true
-            }),
-            babel({
-                exclude: ['node_modules/**'],
-                presets: ['es2015-rollup']
-            }),
-            replace({
-                exclude: 'node_modules/**',
-                ENV: JSON.stringify(process.env.NODE_ENV || 'development')
-            })
-        ]
+        entry: get_target_dir('scripts') + cfg.scripts.entry,
+        dest: get_dest_dir('scripts') + pkg.name +'.js',
+        format: cfg.scripts.pkg_format,
+        moduleName: pkg.name,
+        sourceMap: cfg.scripts.source_map,
+        plugins: plugins
     };
 
     createDir(get_dest_dir('scripts'));
     rollup.rollup(rollup_cfg).then( (bundle) => {
         var code = bundle.generate(rollup_cfg).code;
-        var res = process.env.NODE_ENV === 'production' ? uglify.minify(code, {
-            output: {
-                ascii_only: true
-            },
-            compress: {
-                pure_funcs: ['makeMap']
-            }
-        }).code : code;
+        var res = process.env.NODE_ENV === 'production' 
+            ?   uglify.minify(code, {
+                    output: {
+                        ascii_only: true
+                    },
+                    compress: {
+                        pure_funcs: ['makeMap']
+                    }
+                }).code
+            :   code;
 
         fs.writeFileSync(rollup_cfg.dest, res, 'utf8');
     });
@@ -118,7 +115,6 @@ var gulpItems = ['htmls', 'assets', 'styles', 'scripts'];
 gulp.task('default', function() {
     gulp.start(gulpItems);
 });
-
 
 // watch
 gulp.task('watch', function() {
@@ -139,7 +135,6 @@ gulp.task('watch', function() {
     ], gulpItems, browserSync.reload);
 });
 
-
 // create dir
 function createDir(paths) {
     if( typeof paths !== 'string' ) {
@@ -156,10 +151,12 @@ function createDir(paths) {
     }
 }
 
+//
 function get_dest_dir (name) {
     return cfg.dest_dir + cfg[name].dest_dir + '/';
 }
 
+//
 function get_target_dir (name) {
     return cfg.target_dir + cfg[name].target_dir + '/';
 }
