@@ -45,7 +45,7 @@ gulp.task('assets', function() {
 gulp.task('styles', function() {
     var tasks = sass(get_target_dir('styles') + cfg.styles.entry).pipe(concat(pkg.name + '.css'));
     if (cfg.styles.autoprefixer.enabled) {
-        tasks.pipe(
+        tasks = tasks.pipe(
             postcss([
                 autoprefixer(cfg.styles.autoprefixer.options)
             ])
