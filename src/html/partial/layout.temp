@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./static/font-awesome-4.7.0/css/font-awesome.min.css">
     <style>body{overflow:hidden}.v-layout-aside,.v-layout-content{overflow-y:auto;}</style>
 </head>
-<body>
-    <div class="v-layout">
+<body class="v-bgc-silver">
+    <div class="v-layout v-medium">
         {{ include '../partial/header' }}
         {{ if(showSlideBar !== false) { }}
             {{ include '../partial/slide' }}

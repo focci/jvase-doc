@@ -14,11 +14,11 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">Header</h2>
-            <small class="v-card-subtitle">
+            <p class="v-card-subtitle">
                 <code>h1</code> ... <code>h6</code> 所有标题标签，
                 在标题内可以通过 <code>&lt;small&gt;</code> 标签来添加副标题。同样，
                 也可以通过 <code>.v-h1</code> ... <code>.v-h6</code> 来实现同样的效果.
-            </small>
+            </p>
         </div>
         <div class="v-card-body">
             <h1>H1 Heading 1 <small class="fc-steel-light">Small Header</small></h1>
@@ -38,10 +38,10 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">标题</h2>
-            <small class="v-card-subtitle">
+            <p class="v-card-subtitle">
                 当 <code>h1</code> 不满足标题尺寸时，可以通过添加类 
-                <code>.v-display-1</code> ... <code>.v-display-4</code> 来设置更大的标题尺寸.
-            </small>
+                <code>.v-display-*</code> 来设置更大的标题尺寸.
+            </p>
         </div>
         <div class="v-card-body">
             <h1 class="v-display-1">v-display-1</h1>
@@ -57,7 +57,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">Lead</h2>
-            <small class="v-card-subtitle">突出显示段落，添加类 <code>.v-lead</code> 即可</small>
+            <p class="v-card-subtitle">突出显示段落，添加类 <code>.v-lead</code> 即可</p>
         </div>
         <div class="v-card-body">
             <p class="v-lead">
@@ -80,9 +80,9 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">横线</h2>
-            <small class="v-card-subtitle">
+            <p class="v-card-subtitle">
                 对于被删除的文本使用 <code>&lt;del&gt;</code> 标签，额外插入的文本使用 <code>&lt;ins&gt;</code> 标签
-            </small>
+            </p>
         </div>
         <div class="v-card-body">
             <p><del>del 代表被删除的文本</del></p>
@@ -93,85 +93,76 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">文本形状</h2>
-            <small class="v-card-subtitle">
+            <p class="v-card-subtitle">
                 文本的各种显示方式，包括：加粗、斜体、大小写等.
-            </small>
+            </p>
         </div>
         <div class="v-card-body">
-            <p><code>&lt;small&gt;</code>：<small>小号文本</small></p>
-            <p><code>.v-bold</code>：<span class="v-bold">强调文本</span></p>
-            <p><code>&lt;em&gt;</code>：<em>斜体文本</em></p>
-            <p><code>&lt;code&gt;</code>：定义计算机代码文本 <code>js</code>、<code>css</code></p>
-            <p><code>.v-lowercase</code>：小写文本 LOWERCASE / <span class="v-lowercase">LOWERCASE</span></p>
-            <p><code>.v-uppercase</code>：大写文本 uppercase / <span class="v-uppercase">uppercase</span></p>
-            <p><code>.v-capitalize</code>：首字母大写 capitalize / <span class="v-capitalize">capitalize</span></p>
+            <div class="v-table-responsive">
+                <table class="v-table v-fullwidth">
+                    <thead>
+                        <tr>
+                            <th width="150">#</th>
+                            <th width="200">默认效果</th>
+                            <th width="200">实际效果</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;small&gt;</code></td>
+                            <td>小号文本</td>
+                            <td><small>小号文本</small></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>.v-bold</code></td>
+                            <td>强调文本</td>
+                            <td><span class="v-bold">强调文本</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;em&gt;</code></td>
+                            <td>斜体文本</td>
+                            <td><em>斜体文本</em></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;code&gt;</code></td>
+                            <td>js、css</td>
+                            <td><code>js</code>、<code>css</code></td>
+                            <td>定义计算机代码文本</td>
+                        </tr>
+                        <tr>
+                            <td><code>.v-lowercase</code></td>
+                            <td>LOWERCASE</td>
+                            <td><span class="v-lowercase">LOWERCASE</td>
+                            <td>转换成小写</td>
+                        </tr>
+                        <tr>
+                            <td><code>.v-uppercase</code></td>
+                            <td>uppercase</td>
+                            <td><span class="v-uppercase">uppercase</span></td>
+                            <td>转换成大写</td>
+                        </tr>
+                        <tr>
+                            <td><code>.v-capitalize</code></td>
+                            <td>capitalize</td>
+                            <td><span class="v-capitalize">capitalize</span></td>
+                            <td>首字母大写</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+           
         </div>
     </div>
 
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -181,7 +172,67 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
+        </div>
+        <div class="v-card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <p class="v-card-subtitle">SUBTITLE</p>
+        </div>
+        <div class="v-card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <p class="v-card-subtitle">SUBTITLE</p>
+        </div>
+        <div class="v-card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <p class="v-card-subtitle">SUBTITLE</p>
+        </div>
+        <div class="v-card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <p class="v-card-subtitle">SUBTITLE</p>
+        </div>
+        <div class="v-card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <p class="v-card-subtitle">SUBTITLE</p>
+        </div>
+        <div class="v-card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY

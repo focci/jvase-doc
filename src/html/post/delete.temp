@@ -24,13 +24,13 @@
 
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">反转</h2>
+            <h2 class="v-card-title">圆形</h2>
             <small class="v-card-subtitle">
-                添加类 <code>.v-invert</code> 即可实现有背景色的删除按钮
+                添加类 <code>.v-circle</code> 即可实现有背景色的圆形删除按钮
             </small>
         </div>
         <div class="v-card-body">
-            <a href="javascript:;" class="v-del v-invert"></a>
+            <a href="javascript:;" class="v-del v-circle"></a>
         </div>
     </div>
 
@@ -47,33 +47,10 @@
             <a href="javascript:;" class="v-del"></a>
             <a href="javascript:;" class="v-del v-medium"></a>
             <a href="javascript:;" class="v-del v-large"></a>
-            <a href="javascript:;" class="v-del v-invert v-large"></a>
-            <a href="javascript:;" class="v-del v-medium v-invert"></a>
-            <a href="javascript:;" class="v-del v-invert"></a>
-            <a href="javascript:;" class="v-del v-invert v-small"></a>
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">风格</h2>
-            <small class="v-card-subtitle">
-                默认内置5种不同风格： <code>.v-success</code>、
-                <code>.v-warn</code>、<code>.v-info</code>、
-                <code>.v-danger</code>、<code>.v-white</code>.
-            </small>
-        </div>
-        <div class="v-card-body">
-            <div class="v-box">
-                <a href="javascript:;" class="v-del v-success"></a>
-                <a href="javascript:;" class="v-del v-info"></a>
-                <a href="javascript:;" class="v-del v-danger"></a>
-                <a href="javascript:;" class="v-del v-warn"></a>
-                <a href="javascript:;" class="v-del v-invert v-success"></a>
-                <a href="javascript:;" class="v-del v-invert v-info"></a>
-                <a href="javascript:;" class="v-del v-invert v-danger"></a>
-                <a href="javascript:;" class="v-del v-invert v-warn"></a>
-            </div>
+            <a href="javascript:;" class="v-del v-circle v-large"></a>
+            <a href="javascript:;" class="v-del v-medium v-circle"></a>
+            <a href="javascript:;" class="v-del v-circle"></a>
+            <a href="javascript:;" class="v-del v-circle v-small"></a>
         </div>
     </div>
   

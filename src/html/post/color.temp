@@ -17,9 +17,9 @@
                         <h2 class="v-card-title">主色调</h2>
                     </div>
                     <div class="v-card-body">
-                        <div class="v-box v-bgc-primary v-txt-white">
+                        <div class="v-box v-bgc-primary v-white">
                             <b>primary</b>
-                            <p class="v-opacity-8">#03a9f4</p>
+                            <small class="v-opacity-8">#00b1f9</small>
                         </div>
                     </div>
                 </div>
@@ -27,49 +27,49 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">辅助色</h2>
-                        <small class="v-card-subtitle">除主色调外，主要用于着重提示(比如说警告等)</small>
+                        <p class="v-card-subtitle">除主色调外，主要用于着重提示(比如说警告等)</p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-grid-fluid">
                             <div class="v-row">
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-warn v-txt-white">
+                                    <div class="v-box v-bgc-warn v-white">
                                         <b>warn</b>
-                                        <p class="v-opacity-8">#ff9900</p>
+                                        <small class="v-opacity-8">#ffb13d</small>
                                     </div>
-                                    <div class="v-box v-bgc-warn-light v-txt-warn">
+                                    <div class="v-box v-bgc-warn-light v-warn">
                                         <b>warn-light</b>
-                                        <p class="v-opacity-8">#fffaef</p>
+                                        <small class="v-opacity-8">#fffaef</small>
                                     </div>
                                 </div>
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-success v-txt-white">
+                                    <div class="v-box v-bgc-success v-white">
                                         <b>success</b>
-                                        <p class="v-opacity-8">#32c787</p>
+                                        <small class="v-opacity-8">#33d690</small>
                                     </div>
-                                    <div class="v-box v-bgc-success-light v-txt-success">
+                                    <div class="v-box v-bgc-success-light v-success">
                                         <b>success-light</b>
-                                        <p class="v-opacity-8">#f1ffef</p>
+                                        <small class="v-opacity-8">#f1ffef</small>
                                     </div>
                                 </div>
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-danger v-txt-white">
+                                    <div class="v-box v-bgc-danger v-white">
                                         <b>danger</b>
-                                        <p class="v-opacity-8">#ff5b69</p>
+                                        <small class="v-opacity-8">#ff5b69</small>
                                     </div>
-                                    <div class="v-box v-bgc-danger-light v-txt-danger">
+                                    <div class="v-box v-bgc-danger-light v-danger">
                                         <b>danger-light</b>
-                                        <p class="v-opacity-8">#fef0ef</p>
+                                        <small class="v-opacity-8">#fef0ef</small>
                                     </div>
                                 </div>
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-info v-txt-white">
+                                    <div class="v-box v-bgc-info v-white">
                                         <b>info</b>
-                                        <p class="v-opacity-8">#00c6a9</p>
+                                        <small class="v-opacity-8">#18daf1</small>
                                     </div>
-                                    <div class="v-box v-bgc-info-light v-txt-info">
+                                    <div class="v-box v-bgc-info-light v-info">
                                         <b>info-light</b>
-                                        <p class="v-opacity-8">#edfcfc</p>
+                                        <small class="v-opacity-8">#edfcfc</small>
                                     </div>
                                 </div>
                             </div>
@@ -80,65 +80,65 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">中性色</h2>
-                        <small class="v-card-subtitle">主要用于文字、背景等颜色</small>
+                        <p class="v-card-subtitle">主要用于文字、背景等颜色</p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-grid-fluid">
                             <div class="v-row">
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-black-dark v-txt-white">
+                                    <div class="v-box v-bgc-black-dark v-white">
                                         <b>black-dark</b>
-                                        <p class="v-opacity-8">#222735</p>
+                                        <small class="v-opacity-8">#222735</small>
                                     </div>
-                                    <div class="v-box v-bgc-black v-txt-white">
+                                    <div class="v-box v-bgc-black v-white">
                                         <b>black</b>
-                                        <p class="v-opacity-8">#3a4156</p>
+                                        <small class="v-opacity-8">#3a4156</small>
                                     </div>
-                                    <div class="v-box v-bgc-black-light v-txt-white">
+                                    <div class="v-box v-bgc-black-light v-white">
                                         <b>black-light</b>
-                                        <p class="v-opacity-8">#4e5773</p>
+                                        <small class="v-opacity-8">#4e5773</small>
                                     </div>
                                 </div>
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-steel-dark v-txt-white">
+                                    <div class="v-box v-bgc-steel-dark v-white">
                                         <b>steel-dark</b>
-                                        <p class="v-opacity-8">#6a728c</p>
+                                        <small class="v-opacity-8">#6a728c</small>
                                     </div>
-                                    <div class="v-box v-bgc-steel v-txt-white">
+                                    <div class="v-box v-bgc-steel v-white">
                                         <b>steel</b>
-                                        <p class="v-opacity-8">#7e869e</p>
+                                        <small class="v-opacity-8">#7e869e</small>
                                     </div>
-                                    <div class="v-box v-bgc-steel-light v-txt-white">
+                                    <div class="v-box v-bgc-steel-light v-white">
                                         <b>steel-light</b>
-                                        <p class="v-opacity-8">#9097ae</p>
+                                        <small class="v-opacity-8">#9097ae</small>
                                     </div>
                                 </div>
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-gray-dark v-txt-white">
+                                    <div class="v-box v-bgc-gray-dark v-white">
                                         <b>gray-dark</b>
-                                        <p class="v-opacity-8">#a2a7b8</p>
+                                        <small class="v-opacity-8">#9fa7c1</small>
                                     </div>
-                                    <div class="v-box v-bgc-gray v-txt-white">
+                                    <div class="v-box v-bgc-gray v-white">
                                         <b>gray</b>
-                                        <p class="v-opacity-8">#b2b6c6</p>
+                                        <small class="v-opacity-8">#b3bad2</small>
                                     </div>
-                                    <div class="v-box v-bgc-gray-light v-txt-white">
+                                    <div class="v-box v-bgc-gray-light v-white">
                                         <b>gray-light</b>
-                                        <p class="v-opacity-8">#ccd1e1</p>
+                                        <small class="v-opacity-8">#ccd2e5</small>
                                     </div>
                                 </div>
                                 <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
-                                    <div class="v-box v-bgc-silver-dark v-txt-steel-light">
+                                    <div class="v-box v-bgc-silver-dark v-steel-light">
                                         <b>silver-dark</b>
-                                        <p class="v-opacity-8">#e8ebef</p>
+                                        <small class="v-opacity-8">#e7ebf7</small>
                                     </div>
-                                    <div class="v-box v-bgc-silver v-txt-steel-light">
+                                    <div class="v-box v-bgc-silver v-steel-light">
                                         <b>silver</b>
-                                        <p class="v-opacity-8">#f3f3f3</p>
+                                        <small class="v-opacity-8">#f4f6fc</small>
                                     </div>
-                                    <div class="v-box v-bgc-white v-txt-steel-light">
+                                    <div class="v-box v-bgc-white v-steel-light">
                                         <b>white</b>
-                                        <p class="v-opacity-8">#ffffff</p>
+                                        <small class="v-opacity-8">#ffffff</small>
                                     </div>
                                 </div>
                             </div>
@@ -150,11 +150,11 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">应用</h2>
-                        <small class="v-card-subtitle">通过添加类 <code>.v-bgc-*</code> 设置背景颜色；<code>.v-txt-*</code> 设置文字颜色</small>
+                        <p class="v-card-subtitle">通过添加类 <code>.v-bgc-*</code> 设置背景颜色；<code>.v-*</code> 设置文字颜色</p>
                     </div>
                     <div class="v-card-body">
-                        <p class="v-box v-bgc-steel v-txt-white">背景颜色：.v-bgc-steel</p>
-                        <p class="v-box v-txt-steel">文字颜色：.v-txt-steel</p>
+                        <p class="v-box v-bgc-steel v-white">背景颜色：.v-bgc-steel</p>
+                        <p class="v-box v-steel">文字颜色：.v-steel</p>
                     </div>
                 </div>
             </div>

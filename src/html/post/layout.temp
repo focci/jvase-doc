@@ -13,7 +13,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">用法介绍</h2>
-            <small>首先添加外部容器 <code>.v-layout</code> (高度默认为100%)，再添加相应的页面结构容器</small>
+            <p class="v-card-subtitle">首先添加外部容器 <code>.v-layout</code> (高度默认为100%)，再添加相应的页面结构容器</p>
         </div>
     </div>
 
@@ -23,9 +23,9 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">上下结构</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             结构顺序：头部(<code>.v-layout-header</code>)，内容(<code>.v-layout-content</code>)
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -43,9 +43,9 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">左右结构</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             结构顺序：侧边(<code>.v-layout-aside</code>)，内容(<code>.v-layout-content</code>)
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -65,10 +65,10 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">上下-左右结构</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             结构顺序：头部(<code>.v-layout-header</code>)，
                             侧边(<code>.v-layout-aside</code>)，内容(<code>.v-layout-content</code>)
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -89,10 +89,10 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">左右-上下结构</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             结构顺序：侧边(<code>.v-layout-aside</code>)，
                             头部(<code>.v-layout-header</code>)，内容(<code>.v-layout-content</code>)
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -113,18 +113,19 @@
     </div>
 
     <h1 class="v-article-header">Aside尺寸</h1>
-    <p class="v-article-meta">默认提供其它四种不同的尺寸大小：<code>.v-narrow</code>、
-        <code>.v-small</code>、<code>.v-medium</code>、<code>.v-large</code>
+    <p class="v-article-meta">除了默认尺寸外，还提供其它四种不同的尺寸大小：<code>.v-narrow</code>、
+        <code>.v-small</code>、<code>.v-medium</code>、<code>.v-large</code> 来控制Aside的宽度.
     </p>
+
     <div class="v-grid-fluid v-row-gapless">
         <div class="v-row">
             <div class="v-col-xs-12 v-col-lg-6">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">Narrow</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             添加类 <code>.v-narrow</code> 至 <code>.v-layout</code>.
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout v-narrow" style="height:240px;">
@@ -145,9 +146,9 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">Small</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             添加类 <code>.v-small</code> 至 <code>.v-layout</code>.
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout v-small" style="height:240px;">
@@ -170,9 +171,9 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">Medium</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             添加类 <code>.v-medium</code> 至 <code>.v-layout</code>.
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout v-medium" style="height:240px;">
@@ -193,9 +194,9 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">Large</h2>
-                        <small class="v-card-subtitle">
+                        <p class="v-card-subtitle">
                             添加类 <code>.v-large</code> 至 <code>.v-layout</code>.
-                        </small>
+                        </p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout v-large" style="height:240px;">
