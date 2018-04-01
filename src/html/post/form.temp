@@ -3,98 +3,374 @@
     {
         title: '表单',
         ename: 'form',
-        description: ''
+        description: '通过定义好的表单结构，快速搭建表单系统.'
     } 
 }}
 
 {{#def.content
     
+
+    <div class="v-grid-fluid">
+        <div class="v-row">
+            <div class="v-col-xs-8">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">表单</h2>
+                        <p class="v-card-subtitle">一个常规的表单样式(包括布局方式)</p>
+                    </div>
+                    <div class="v-card-body">
+                        <form class="v-form">
+                            <div class="v-form-row">
+                                <div class="v-form-col v-col-xs-6 v-form-inline">
+                                    <label class="v-form-label">用户名</label>
+                                    <div class="v-region">
+                                        <input type="text" class="v-input" placeholder="用户名">
+                                    </div>
+                                </div>
+                                <div class="v-form-col v-col-xs-6 v-form-inline">
+                                    <label class="v-form-label">妮称</label>
+                                    <div class="v-region">
+                                        <input type="text" class="v-input" placeholder="妮称">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col v-col-xs-6 v-form-inline">
+                                    <label class="v-form-label">邮箱地址</label>
+                                    <div class="v-region">
+                                        <input type="text" class="v-input" placeholder="@">
+                                    </div>
+                                </div>
+                                <div class="v-form-col v-col-xs-6 v-form-inline">
+                                    <label class="v-form-label">选项</label>
+                                    <div class="v-region">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Option A</option>
+                                                <option value="2">Select Option B</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col v-col-xs-12 v-form-inline">
+                                    <label class="v-form-label">性别</label>
+                                    <div class="v-region">
+                                        <label class="v-radio">
+                                            <input type="radio" name="a" checked/>
+                                            <span>男生</span>
+                                        </label>
+                                        <label class="v-radio">
+                                            <input type="radio" name="a" />
+                                            <span>女生</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="v-form-row">
+                                <div class="v-form-col v-col-xs-12">
+                                    <label class="v-form-label">备注 (标题在textarea上面)</label>
+                                    <div class="v-region">
+                                        <textarea class="v-input"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col v-col-xs-12">
+                                    <div class="v-region">
+                                        <label class="v-checkbox">
+                                            <input type="checkbox" name="a" />
+                                            <span>是否同意
+                                                <a href="javascript:;">《用户使用协议》</a>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col v-col-xs-12">
+                                    <label class="v-form-label"></label>
+                                    <div class="v-region">
+                                        <input type="button" class="v-btn" value="取消" />
+                                        <input type="button" class="v-btn v-success" value="提交表单" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="v-col-xs-4">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">表单结构</h2>
+                    </div>
+                    <div class="v-card-body">
+                        &lt;form class="v-form"&gt;
+                            &lt;div class="v-form-row"&gt;
+                                &lt;div class="v-form-col"&gt;
+                                    &lt;label class="v-form-label"&gt;&lt;/label&gt;
+                                    &lt;div class="v-region"&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="v-article-header">表单元素 (Element)</h1>
+    <p class="v-article-meta">展示表单元素及其功能(input、radio、textarea、checkbox等)</p>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">说明</h2>
+            <p class="v-card-subtitle">所有的表单元素都须放在 <code>.v-region</code> 容器中，包括尺寸、图标等所依赖的类都添加在此容器之上.</p>
+        </div>
+    </div>
+
+    <div class="v-grid-fluid">
+        <div class="v-row">
+            <div class="v-col-xs-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">尺寸</h2>
+                        <p class="v-card-subtitle">
+                            默认支持其它三种不同的尺寸 <code>.v-small</code>、<code>.v-medium</code>、<code>.v-large</code>，
+                            <code>texteare</code>元素添加尺寸类，只会改变相应的字体大小.
+                        </p>
+                    </div>
+                    <div class="v-card-body">
+                        <form class="v-form">
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-small">
+                                        <input type="text" class="v-input" placeholder="Small">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region">
+                                        <input type="text" class="v-input" placeholder="Default">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-medium">
+                                        <input type="text" class="v-input" placeholder="Medium">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-large">
+                                        <input type="text" class="v-input" placeholder="Large">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-small">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Small</option>
+                                                <option value="2">Select Small</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Default</option>
+                                                <option value="2">Select Default</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-medium">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Medium</option>
+                                                <option value="2">Select Medium</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-large">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Large</option>
+                                                <option value="2">Select Large</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="v-col-xs-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">图标</h2>
+                        <p class="v-card-subtitle">
+                            在 <code>.v-region</code> 容器中添加类 <code>v-has-left-icon</code> 或者 <code>v-has-right-icon</code> 设置左右图标占位，
+                            然后再在容器中添加对应图标即可.
+                        </p>
+                    </div>
+                    <div class="v-card-body">
+                        <form class="v-form">
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-small v-has-icon-left v-has-icon-right">
+                                        <input type="text" class="v-input" placeholder="Small">
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-has-icon-left v-has-icon-right">
+                                        <input type="text" class="v-input" placeholder="Default">
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-medium v-has-icon-left v-has-icon-right">
+                                        <input type="text" class="v-input" placeholder="Medium">
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-large v-has-icon-left v-has-icon-right">
+                                        <input type="text" class="v-input" placeholder="Large">
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-small v-has-icon-left v-has-icon-right">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Small</option>
+                                                <option value="2">Select Small</option>
+                                            </select>
+                                        </span>
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-has-icon-left v-has-icon-right">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Default</option>
+                                                <option value="2">Select Default</option>
+                                            </select>
+                                        </span>
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-medium v-has-icon-left v-has-icon-right">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Medium</option>
+                                                <option value="2">Select Medium</option>
+                                            </select>
+                                        </span>
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v-form-row">
+                                <div class="v-form-col">
+                                    <div class="v-region v-large v-has-icon-left v-has-icon-right">
+                                        <span class="v-select">
+                                            <select>
+                                                <option value="1">Select Large</option>
+                                                <option value="2">Select Large</option>
+                                            </select>
+                                        </span>
+                                        <span class="v-icon v-icon-left">
+                                            <i class="fa fa-fire"></i>
+                                        </span>
+                                        <span class="v-icon v-icon-right">
+                                            <i class="fa fa-send"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            <form class="v-form">
-                <div class="v-form-items">
-                    <div class="v-form-item col-xs-8">
-                        <label class="v-form-label">用户名</label>
-                        <div class="v-form-ctrl">
-                            <input type="text" class="input" placeholder="用户名">
-                        </div>
-                    </div>
-                    <div class="v-form-item col-xs-4">
-                        <label class="v-form-label">妮称</label>
-                        <div class="v-form-ctrl">
-                            <input type="text" class="input" placeholder="妮称">
-                        </div>
-                    </div>
-                </div>
-                <div class="v-form-items">
-                    <div class="v-form-item v-form-inline">
-                        <label class="v-form-label">性别</label>
-                        <div class="v-form-ctrl">
-                            <label class="radio">
-                                <input type="radio" name="a" checked/>
-                                <span>男生</span>
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="a" />
-                                <span>女生</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="v-form-items">
-                    <div class="v-form-item col-xs-8">
-                        <label class="v-form-label">邮箱</label>
-                        <div class="v-form-ctrl">
-                            <input type="text" class="input" placeholder="@">
-                        </div>
-                    </div>
-                    <div class="v-form-item col-xs-4">
-                        <label class="v-form-label">国家</label>
-                        <div class="v-form-ctrl">
-                            <div class="select use-fullwidth">
-                                <select class="input">
-                                    <option value="">中国</option>
-                                    <option value="">法国</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="v-form-item">
-                    <label class="v-form-label">备注</label>
-                    <div class="v-form-ctrl">
-                        <textarea class="input" rows="4"></textarea>
-                    </div>
-                </div>
-                <div class="v-form-item">
-                    <div class="v-form-ctrl">
-                        <label class="checkbox">
-                            <input type="checkbox" name="a" />
-                            <span>是否同意
-                                <a href="javascript:;">《用户使用协议》</a>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="v-form-item">
-                    <label class="v-form-label"></label>
-                    <div class="v-form-ctrl">
-                        <input type="button" class="v-btn v-success" value="提交用户信息" />
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -104,7 +380,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -114,7 +390,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -124,7 +400,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -134,7 +410,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -144,7 +420,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -154,7 +430,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -164,7 +440,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -174,7 +450,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -184,27 +460,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY

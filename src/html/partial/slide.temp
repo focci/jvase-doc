@@ -8,6 +8,22 @@
                         ename: 'General',
                         children: [
                             {
+                                title: '介绍',
+                                ename: 'Introduction'
+                            },
+                            {
+                                title: '安装',
+                                ename: 'Install'
+                            },
+                            {
+                                title: 'SASS',
+                                ename: 'SCSS'
+                            },
+                            {
+                                title: '自定义',
+                                ename: 'Customized'
+                            },
+                            {
                                 title: '颜色',
                                 ename: 'Color'
                             },
@@ -128,7 +144,29 @@
                                 ename: 'Tooltip'
                             }
                         ]
-                    }
+                    },
+                    {
+                        title: '工具',
+                        ename: 'Tools',
+                        children: [
+                            {
+                                title: 'Hover',
+                                ename: 'Hover'
+                            },
+                            {
+                                title: '响应式工具',
+                                ename: 'Responsive'
+                            },
+                            {
+                                title: '浏览器检测',
+                                ename: 'Support'
+                            },
+                            {
+                                title: '版本号',
+                                ename: 'Version'
+                            }
+                        ]
+                    },
                 ];
                 for( var i=0,len=menu_data.length; i<len; i++ ) {
                     var item = menu_data[i];

@@ -1,0 +1,80 @@
+{{
+    extend '../partial/layout'
+    {
+        title: '介绍',
+        ename: 'introduction',
+        description: ''
+    } 
+}}
+
+{{#def.content
+    
+
+    <style>.v-article-header {display: none;}</style>
+
+    <div class="v-center">
+        <img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-wall.png"/>
+    </div>
+    <h1 class="v-display-4 v-center v-gray-light">@v2.0.0</h1>
+
+    
+    <div class="v-grid-fluid">
+        <div class="v-row">
+            <div class="v-col-xs-12 v-col-md-10 v-col-md-offset-1">
+                <div class="v-card">
+                    <div class="v-card-body">
+                        <p>当我们面对一个web项目时，往往会涉及到许多CSS文件，而书写CSS本来是一种简单、重复、无聊的工作，Jvase 就是为了解决这些问题、提交工作效率而生的。</p>
+                        <p>
+                            <span class="v-badge v-success">Jvase</span> 遵循渐进式的设计原则，如果要实现相应的效果，只需要添加对应的类即可！
+                        </p>
+                        
+                        <hr>
+                        <h4>浏览器兼容性</h4>
+                        <p>尽可能兼容所有现代浏览器，使其显示结果保持一致。</p>
+
+                        <table class="v-table v-border v-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>IE</th>
+                                    <th>Edge</th>
+                                    <th>Chrome</th>
+                                    <th>Firfox</th>
+                                    <th>Safari</th>
+                                    <th>Opera</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>9+</td>
+                                    <td>19+</td>
+                                    <td>58+</td>
+                                    <td>58+</td>
+                                    <td>-</td>
+                                    <td>42+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <hr>
+                        <h4>Issue</h4>
+                        <p>你可以在Github <a href="https://github.com/focci/jvase/issues">Issue</a> 上提交Bug或者讨论问题</p>
+
+                        <hr>
+                        <h4>捐赠</h4>
+                        <p>
+                            <img src="https://raw.githubusercontent.com/focci/asset/master/pay/wechat.jpg" alt="Wechat"> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="https://raw.githubusercontent.com/focci/asset/master/pay/alipay.jpg" alt="Alipay">
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+#}}

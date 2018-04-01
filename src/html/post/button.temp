@@ -11,7 +11,7 @@
     
     <div class="v-grid-fluid">
         <div class="v-row">
-            <div class="v-col-xs-7">
+            <div class="v-col-xs-12 v-col-md-7">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">用法介绍</h2>
@@ -20,7 +20,7 @@
                         </p>
                     </div>
                     <div class="v-card-body">
-                        <a class="v-btn">Link</a>
+                        <a href="javascript:;" class="v-btn">Link</a>
                         <button class="v-btn">按钮</button>
                         <input type="button" class="v-btn" value="Input">
                         <button class="v-btn" disabled>Disabled</button>
@@ -91,10 +91,15 @@
                         <p class="v-card-subtitle">除了默认按钮外，还支持3种不同尺寸：<code>.v-small</code>、<code>.v-medium</code>、<code>.v-large</code></p>
                     </div>
                     <div class="v-card-body">
-                        <button class="v-btn v-small">Small</button>
-                        <button class="v-btn">Default</button>
-                        <button class="v-btn v-medium">Medium</button>
-                        <button class="v-btn v-large">Large</button>
+                        <button class="v-btn v-small">Small <i class="v-del v-circle"></i></button>
+                        <button class="v-btn">Default <i class="v-del v-circle"></i></button>
+                        <button class="v-btn v-medium">Medium <i class="v-del v-circle"></i></button>
+                        <button class="v-btn v-large">Large <i class="v-del v-circle"></i></button>
+                        <hr>
+                        <button class="v-btn v-small">Small <i class="fa fa-user"></i></button>
+                        <button class="v-btn">Default <i class="fa fa-user"></i></button>
+                        <button class="v-btn v-medium">Medium <i class="fa fa-user"></i></button>
+                        <button class="v-btn v-large">Large <i class="fa fa-user"></i></button>
                     </div>
                 </div>
 
@@ -154,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div class="v-col-xs-5">
+            <div class="v-col-xs-12 v-col-md-5">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">按钮组</h2>
@@ -177,7 +182,7 @@
                 
                 <div class="v-card">
                     <div class="v-card-header">
-                        <h2 class="v-card-title">按钮组(胶囊)</h2>
+                        <h2 class="v-card-title">胶囊按钮组</h2>
                         <p class="v-card-subtitle">添加类 <code>.v-pill</code> 至 <code>.v-btns</code>容器即可.</p>
                     </div>
                     <div class="v-card-body">
@@ -190,8 +195,11 @@
 
                 <div class="v-card">
                     <div class="v-card-header">
-                        <h2 class="v-card-title">按钮组(垂直)</h2>
-                        <p class="v-card-subtitle">添加类 <code>.v-vertical</code> 至 <code>.v-btns</code>容器即可，<b class="v-danger">不支持与 <code>.v-pill</code> 同时使用.</b></p>
+                        <h2 class="v-card-title">垂直按钮组</h2>
+                        <p class="v-card-subtitle">添加类 <code>.v-vertical</code> 至 <code>.v-btns</code>容器即可，
+                            <b class="v-danger">不支持与 <code>.v-pill</code> 同时使用.</b>
+                        </p>
+                        <p class="v-card-subtitle">如果要设置尺寸，可以添加相应的尺寸类(比如：<code>.v-large</code>)至 <code>.v-btns</code>即可.</p>
                     </div>
                     <div class="v-card-body">
                         <div class="v-btns v-vertical">
