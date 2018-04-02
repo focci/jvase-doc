@@ -19,86 +19,69 @@
                         <p class="v-card-subtitle">一个常规的表单样式(包括布局方式)</p>
                     </div>
                     <div class="v-card-body">
-                        <form class="v-form">
-                            <div class="v-form-row">
-                                <div class="v-form-col v-col-xs-6 v-form-inline">
-                                    <label class="v-form-label">用户名</label>
-                                    <div class="v-region">
-                                        <input type="text" class="v-input" placeholder="用户名">
-                                    </div>
-                                </div>
-                                <div class="v-form-col v-col-xs-6 v-form-inline">
-                                    <label class="v-form-label">妮称</label>
-                                    <div class="v-region">
-                                        <input type="text" class="v-input" placeholder="妮称">
-                                    </div>
-                                </div>
+                        <div class="v-form-item">
+                            <div class="v-form-item">
+                                <label class="v-form-label">用户名</label>
+                                <input type="text" class="v-input" placeholder="用户名">
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col v-col-xs-6 v-form-inline">
-                                    <label class="v-form-label">邮箱地址</label>
-                                    <div class="v-region">
-                                        <input type="text" class="v-input" placeholder="@">
-                                    </div>
-                                </div>
-                                <div class="v-form-col v-col-xs-6 v-form-inline">
-                                    <label class="v-form-label">选项</label>
-                                    <div class="v-region">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Option A</option>
-                                                <option value="2">Select Option B</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="v-form-item">
+                                <label class="v-form-label">妮称</label>
+                                <input type="text" class="v-input" placeholder="妮称">
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col v-col-xs-12 v-form-inline">
-                                    <label class="v-form-label">性别</label>
-                                    <div class="v-region">
-                                        <label class="v-radio">
-                                            <input type="radio" name="a" checked/>
-                                            <span>男生</span>
-                                        </label>
-                                        <label class="v-radio">
-                                            <input type="radio" name="a" />
-                                            <span>女生</span>
-                                        </label>
-                                    </div>
-                                </div>
+                            <div class="v-form-item">
+                                <label class="v-form-label">年龄</label>
+                                <input type="number" value="20" class="v-input" placeholder="年龄">
                             </div>
-                            <hr>
-                            <div class="v-form-row">
-                                <div class="v-form-col v-col-xs-12">
-                                    <label class="v-form-label">备注 (标题在textarea上面)</label>
-                                    <div class="v-region">
-                                        <textarea class="v-input"></textarea>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <label class="v-form-label">备注 (标题在textarea上面)</label>
+                            <textarea class="v-input"></textarea>
+                        </div>
+                        <hr/>
+                        <div class="v-form-item v-horizontal">
+                            <label class="v-form-label">邮箱地址</label>
+                            <div class="v-form-item">
+                                <input type="text" class="v-input" placeholder="@">
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col v-col-xs-12">
-                                    <div class="v-region">
-                                        <label class="v-checkbox">
-                                            <input type="checkbox" name="a" />
-                                            <span>是否同意
-                                                <a href="javascript:;">《用户使用协议》</a>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
+                            <label class="v-form-label">选项</label>
+                            <div class="v-form-item">
+                                <span class="v-select">
+                                    <select>
+                                        <option value="1">Select Option A</option>
+                                        <option value="2">Select Option B</option>
+                                    </select>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col v-col-xs-12">
-                                    <label class="v-form-label"></label>
-                                    <div class="v-region">
-                                        <input type="button" class="v-btn" value="取消" />
-                                        <input type="button" class="v-btn v-success" value="提交表单" />
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
+                        <div class="v-form-item v-horizontal">
+                            <label class="v-form-label">性别</label>
+                            <label class="v-radio">
+                                <input type="radio" name="a" checked/>
+                                <span>男生</span>
+                            </label>
+                            <label class="v-radio">
+                                <input type="radio" name="a" />
+                                <span>女生</span>
+                            </label>
+                        </div>
+                        <div class="v-form-item v-horizontal">
+                            <label class="v-form-label">备注</label>
+                            <textarea class="v-input"></textarea>
+                        </div>
+                        <div class="v-form-item v-horizontal">
+                            <label class="v-form-label"></label>
+                            <label class="v-checkbox">
+                                <input type="checkbox" name="a" />
+                                <span>是否同意
+                                    <a href="javascript:;">《用户使用协议》</a>
+                                </span>
+                            </label>
+                        </div>
+                        <hr/>
+                        <div class="v-form-item v-inline-block">
+                            <input type="button" class="v-btn v-success" value="提交表单" />
+                            <input type="button" class="v-btn" value="取消" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,7 +92,7 @@
                     </div>
                     <div class="v-card-body">
                         &lt;form class="v-form"&gt;
-                            &lt;div class="v-form-row"&gt;
+                            &lt;div class="v-form-item"&gt;
                                 &lt;div class="v-form-col"&gt;
                                     &lt;label class="v-form-label"&gt;&lt;/label&gt;
                                     &lt;div class="v-region"&gt;&lt;/div&gt;
@@ -144,84 +127,50 @@
                         </p>
                     </div>
                     <div class="v-card-body">
-                        <form class="v-form">
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-small">
-                                        <input type="text" class="v-input" placeholder="Small">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region">
-                                        <input type="text" class="v-input" placeholder="Default">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-medium">
-                                        <input type="text" class="v-input" placeholder="Medium">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-large">
-                                        <input type="text" class="v-input" placeholder="Large">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-small">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Small</option>
-                                                <option value="2">Select Small</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Default</option>
-                                                <option value="2">Select Default</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-medium">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Medium</option>
-                                                <option value="2">Select Medium</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-large">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Large</option>
-                                                <option value="2">Select Large</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        <div class="v-form-item">
+                            <input type="text" class="v-input v-small" placeholder="Small">
+                        </div>
+                        <div class="v-form-item">
+                            <input type="text" class="v-input" placeholder="Default">
+                        </div>
+                        <div class="v-form-item">
+                            <input type="text" class="v-input v-medium" placeholder="Medium">
+                        </div>
+                        <div class="v-form-item">
+                            <input type="text" class="v-input v-large" placeholder="Large">
+                        </div>
+                        <div class="v-form-item">
+                            <span class="v-select v-small">
+                                <select>
+                                    <option value="1">Select Small</option>
+                                    <option value="2">Select Small</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="v-form-item">
+                            <span class="v-select">
+                                <select>
+                                    <option value="1">Select Default</option>
+                                    <option value="2">Select Default</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="v-form-item">
+                            <span class="v-select v-medium">
+                                <select>
+                                    <option value="1">Select Medium</option>
+                                    <option value="2">Select Medium</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="v-form-item">
+                            <span class="v-select v-large">
+                                <select>
+                                    <option value="1">Select Large</option>
+                                    <option value="2">Select Large</option>
+                                </select>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -235,132 +184,114 @@
                         </p>
                     </div>
                     <div class="v-card-body">
-                        <form class="v-form">
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-small v-has-icon-left v-has-icon-right">
-                                        <input type="text" class="v-input" placeholder="Small">
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <input type="text" class="v-input v-small" placeholder="Small">
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-has-icon-left v-has-icon-right">
-                                        <input type="text" class="v-input" placeholder="Default">
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <input type="text" class="v-input" placeholder="Default">
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-medium v-has-icon-left v-has-icon-right">
-                                        <input type="text" class="v-input" placeholder="Medium">
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <input type="text" class="v-input v-medium" placeholder="Medium">
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-large v-has-icon-left v-has-icon-right">
-                                        <input type="text" class="v-input" placeholder="Large">
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <input type="text" class="v-input v-large" placeholder="Large">
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-small v-has-icon-left v-has-icon-right">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Small</option>
-                                                <option value="2">Select Small</option>
-                                            </select>
-                                        </span>
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <span class="v-select v-small">
+                                    <select>
+                                        <option value="1">Select Small</option>
+                                        <option value="2">Select Small</option>
+                                    </select>
+                                </span>
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-has-icon-left v-has-icon-right">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Default</option>
-                                                <option value="2">Select Default</option>
-                                            </select>
-                                        </span>
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <span class="v-select">
+                                    <select>
+                                        <option value="1">Select Default</option>
+                                        <option value="2">Select Default</option>
+                                    </select>
+                                </span>
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-medium v-has-icon-left v-has-icon-right">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Medium</option>
-                                                <option value="2">Select Medium</option>
-                                            </select>
-                                        </span>
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <span class="v-select v-medium">
+                                    <select>
+                                        <option value="1">Select Medium</option>
+                                        <option value="2">Select Medium</option>
+                                    </select>
+                                </span>
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                            <div class="v-form-row">
-                                <div class="v-form-col">
-                                    <div class="v-region v-large v-has-icon-left v-has-icon-right">
-                                        <span class="v-select">
-                                            <select>
-                                                <option value="1">Select Large</option>
-                                                <option value="2">Select Large</option>
-                                            </select>
-                                        </span>
-                                        <span class="v-icon v-icon-left">
-                                            <i class="fa fa-fire"></i>
-                                        </span>
-                                        <span class="v-icon v-icon-right">
-                                            <i class="fa fa-send"></i>
-                                        </span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="v-form-item">
+                            <div class="v-region v-has-icon-left v-has-icon-right">
+                                <span class="v-select v-large">
+                                    <select>
+                                        <option value="1">Select Large</option>
+                                        <option value="2">Select Large</option>
+                                    </select>
+                                </span>
+                                <span class="v-icon v-icon-left">
+                                    <i class="fa fa-fire"></i>
+                                </span>
+                                <span class="v-icon v-icon-right">
+                                    <i class="fa fa-send"></i>
+                                </span>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

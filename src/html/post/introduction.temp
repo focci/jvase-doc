@@ -13,7 +13,7 @@
     <style>.v-article-header {display: none;}</style>
 
     <div class="v-center">
-        <img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-wall.png"/>
+        <img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-wall.png" width="320" height="124">
     </div>
     <h1 class="v-display-4 v-center v-gray-light">@v2.0.0</h1>
 
@@ -27,6 +27,7 @@
                         <p>
                             <span class="v-badge v-success">Jvase</span> 遵循渐进式的设计原则，如果要实现相应的效果，只需要添加对应的类即可！
                         </p>
+                        
                         
                         <hr>
                         <h4>浏览器兼容性</h4>
@@ -55,9 +56,11 @@
                             </tbody>
                         </table>
                         
+
                         <hr>
                         <h4>Issue</h4>
                         <p>你可以在Github <a href="https://github.com/focci/jvase/issues">Issue</a> 上提交Bug或者讨论问题</p>
+
 
                         <hr>
                         <h4>捐赠</h4>
@@ -65,7 +68,6 @@
                             <img src="https://raw.githubusercontent.com/focci/asset/master/pay/wechat.jpg" alt="Wechat"> &nbsp;&nbsp;&nbsp;&nbsp;
                             <img src="https://raw.githubusercontent.com/focci/asset/master/pay/alipay.jpg" alt="Alipay">
                         </p>
-
 
                     </div>
                 </div>

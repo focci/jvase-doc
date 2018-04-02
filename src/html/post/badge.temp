@@ -108,7 +108,7 @@
 
                 <div class="v-card">
                     <div class="v-card-header">
-                        <h2 class="v-card-title">删除按钮</h2>
+                        <h2 class="v-card-title">删除</h2>
                     </div>
                     <div class="v-card-body">
                         <span class="v-badge">Badge <i class="v-del v-circle"></i></span>
