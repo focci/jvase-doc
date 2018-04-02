@@ -3,7 +3,7 @@
     {
         title: 'Hover',
         ename: 'hover',
-        description: ''
+        description: '常用于鼠标经过时触发某些模块的显示与隐藏'
     } 
 }}
 
@@ -12,131 +12,58 @@
     
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">用法介绍</h2>
+            <p class="v-card-subtitle">在外层添加类 <code>.v-hover</code>, 此类没有添加任何CSS样式, 只是用于鼠标经过时触发内部元素的显示与隐藏.</p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <table class="v-table v-border v-fullwidth">
+                <thead>
+                    <tr>
+                        <th width="200">类</th>
+                        <th style="text-align:left">说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>.v-hover-inline</code>
+                        </td>
+                        <td style="text-align:left">等同于: display:inline;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-hover-block</code>
+                        </td>
+                        <td style="text-align:left">等同于: display:block;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-hover-inline-block</code>
+                        </td>
+                        <td style="text-align:left">等同于: display:inline-block;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-hover-hidden</code>
+                        </td>
+                        <td style="text-align:left">鼠标经过时隐藏: display:none;</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">例子</h2>
+            <p class="v-card-subtitle">鼠标经过时，更换图标</p>
         </div>
         <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
+            <button class="v-btn v-success v-hover">
+                <i class="fa fa-battery-2 v-hover-hidden"></i>
+                <i class="fa fa-battery-full v-hide v-hover-inline-block"></i>
+                鼠标经过更换图标
+            </button>
         </div>
     </div>
 

@@ -1,0 +1,145 @@
+{{
+    extend '../partial/layout'
+    {
+        title: '扩展',
+        ename: 'expand',
+        description: '展示动效、阴影等一些特殊的效果.'
+    } 
+}}
+
+{{#def.content
+    
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">胶囊&圆角</h2>
+            <p class="v-card-subtitle">通过添加类 <code>.v-pill</code> , 可以实现两端呈半圆形的胶囊形状，添加类 <code>.v-radius</code> 可实现圆角效果(圆角大小默认为3px).</p>
+        </div>
+        <div class="v-card-body">
+            <div class="v-pill v-inline-block v-bgc-gray-light v-box" style="width: 100px;"></div>
+            <div class="v-radius v-inline-block v-bgc-gray-light v-box" style="width: 100px;margin-left:30px;"></div>
+        </div>
+    </div>
+
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">图片形状</h2>
+            <p class="v-card-subtitle">通过为 <code>&lt;img&gt;</code> 元素添加以下相应的类，可以让图片呈现不同的形状(圆角、圆、外边框).</p>
+        </div>
+        <div class="v-card-body">
+            <div class="v-inline-block" style="margin-right:1rem;">
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif" class="v-radius" />
+                <div class="v-center v-gray">.use-radius</div>
+            </div>
+            <div class="v-inline-block" style="margin-right:1rem;">
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif" class="v-circle" />
+                <div class="v-center v-gray">.use-circle</div>
+            </div>
+            <div class="v-inline-block">
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif" class="v-thumb" />
+                <div class="v-center v-gray">.thumb</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">透明度</h2>
+            <p class="v-card-subtitle">通过添加类 <code>.v-opacity-*</code> 来实现，其中" * "的取值范围为0-10的整数，其中0表示完全透明；10表示完全不透明.</p>
+        </div>
+        <div class="v-card-body">
+            <div class="v-grid-fluid">
+                <div class="v-row">
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-10">.opacity-10</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-9">.opacity-9</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-8">.opacity-8</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-7">.opacity-7</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-6">.opacity-6</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-5">.opacity-5</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-4">.opacity-4</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-3">.opacity-3</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-2">.opacity-2</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-1">.opacity-1</div>
+                    <div class="v-col-xs-6 v-col-md-2 v-bgc-steel v-white v-box v-opacity-0">.opacity-0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">阴影</h2>
+            <p class="v-card-subtitle">
+                通过添加类 <code>.z-depth-*</code>、<code>.z-depth-*-top</code>、<code>.z-depth-*-bottom</code> 来实现不同的阴影效果，其中"*"号的取值范围是1~5.
+            </p>
+        </div>
+        <div class="v-card-body">
+            <div class="v-grid-fluid">
+                <div class="grid">
+                    <div class="v-row">
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-1 v-box v-gray-dark" style="margin:1.5rem">.z-depth-1</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-1-top v-box v-gray-dark" style="margin:1.5rem">.z-depth-1-top</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-1-bottom v-box v-gray-dark" style="margin:1.5rem">.z-depth-1-bottom</div>
+                        </div>
+                    </div>
+                    <div class="v-row">
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-2 v-box v-gray-dark" style="margin:1.5rem">.z-depth-2</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-2-top v-box v-gray-dark" style="margin:1.5rem">.z-depth-2-top</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-2-bottom v-box v-gray-dark" style="margin:1.5rem">.z-depth-2-bottom</div>
+                        </div>
+                    </div>
+                    <div class="v-row">
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-3 v-box v-gray-dark" style="margin:1.5rem">.z-depth-3</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-3-top v-box v-gray-dark" style="margin:1.5rem">.z-depth-3-top</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-3-bottom v-box v-gray-dark" style="margin:1.5rem">.z-depth-3-bottom</div>
+                        </div>
+                    </div>
+                    <div class="v-row">
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-4 v-box v-gray-dark" style="margin:1.5rem">.z-depth-4</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-4-top v-box v-gray-dark" style="margin:1.5rem">.z-depth-4-top</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-4-bottom v-box v-gray-dark" style="margin:1.5rem">.z-depth-4-bottom</div>
+                        </div>
+                    </div>
+                    <div class="v-row pad-bottom-60">
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-5 v-box v-gray-dark" style="margin:1.5rem">.z-depth-5</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-5-top v-box v-gray-dark" style="margin:1.5rem">.z-depth-5-top</div>
+                        </div>
+                        <div class="v-col-md-4 v-col-xs-12">
+                            <div class="z-depth-5-bottom v-box v-gray-dark" style="margin:1.5rem">.z-depth-5-bottom</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/><br/>
+        </div>
+    </div>
+
+    
+
+    
+
+#}}

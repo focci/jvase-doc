@@ -12,131 +12,109 @@
     
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">显示 / 隐藏</h2>
+            <p class="v-card-subtitle">根据Media查询来控制元素的显示与否，其中 " * "号对应：xs、sm、md</p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <table class="v-table v-border v-fullwidth">
+                <thead>
+                    <tr>
+                        <th width="240">工具</th>
+                        <th>xs</th>
+                        <th>sm</th>
+                        <th>md</th>
+                        <th>lg</th>
+                        <th>说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>.v-hidden-*</code>
+                        </td>
+                        <td>≦768px 隐藏</td>
+                        <td>≦1024px 隐藏</td>
+                        <td>≦1280px 隐藏</td>
+                        <td>≦1440px 隐藏</td>
+                        <td>display: none</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-visible-*-inline</code>
+                        </td>
+                        <td rowspan="3">≦768px 显示</td>
+                        <td rowspan="3">≦1024px 显示</td>
+                        <td rowspan="3">≦1280px 显示</td>
+                        <td rowspan="3">≦1440px 显示</td>
+                        <td>display: inline</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-visible-*-block</code>
+                        </td>
+                        <td>display: block</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-visible-*-inline-block</code>
+                        </td>
+                        <td>display: inline-block</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">打印</h2>
+            <p class="v-card-subtitle">用于打印时，元素的显示或者隐藏</p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <table class="v-table v-border v-fullwidth">
+                <thead>
+                    <tr>
+                        <th width="240">工具</th>
+                        <th>说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>.v-visible-print-block</code>
+                        </td>
+                        <td>display: block</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-visible-print-inline</code>
+                        </td>
+                        <td>display: inline</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-visible-print-inline-block</code>
+                        </td>
+                        <td>display: inline-block</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>.v-hidden-print</code>
+                        </td>
+                        <td>display: none</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
+            <h2 class="v-card-title">响应式图片</h2>
+            <p class="v-card-subtitle">
+                在 <code>&lt;img&gt;</code> 上添加类 <code>.v-responsive</code>, 
+                在窗口宽度小于 768px时, 图度的宽度会变成100%, 且高度自适应, 即: 
+            </p>
         </div>
     </div>
 

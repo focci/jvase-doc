@@ -38,6 +38,10 @@
                             {
                                 title: '排版',
                                 ename: 'Typography'
+                            },
+                            {
+                                title: '扩展',
+                                ename: 'Expand'
                             }
                         ]
                     },
