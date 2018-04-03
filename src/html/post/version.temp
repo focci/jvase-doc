@@ -3,7 +3,7 @@
     {
         title: '版本号',
         ename: 'version',
-        description: ''
+        description: '显示版本号'
     } 
 }}
 
@@ -12,131 +12,13 @@
     
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">用法介绍</h2>
+            <p class="v-card-subtitle">
+                添加类 <code>.v-version</code> 到 <code>&lt;span&gt;</code>, 即可显示出对应的版本号, 主要用于开发测试.
+            </p>
         </div>
         <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
+            <span class="v-version"></span>
         </div>
     </div>
 

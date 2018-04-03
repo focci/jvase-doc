@@ -3,7 +3,7 @@
     {
         title: '气泡',
         ename: 'tooltip',
-        description: ''
+        description: '常用于鼠标触发的提示'
     } 
 }}
 
@@ -12,133 +12,119 @@
     
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">用法介绍</h2>
+            <p class="v-card-subtitle">
+                添加类 <code>.v-tooltip</code> 到一个 <code>&lt;div&gt;</code> 块元素，接着指定箭头方向，
+                比如 <code>.v-left-top</code> 表示箭头位于左上方(默认).
+            </p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <div class="v-tooltip v-relative v-left-top">
+                <div>Tooltip</div>
+                <em>箭头方向: v-left-top</em>
+            </div>
         </div>
     </div>
 
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <div class="v-box">
+                <div class="v-btn v-hover">
+                    <span>v-top-left</span>
+                    <div class="v-tooltip v-hover-block v-top-left" style="top: -70px;">
+                        <b>v-top-left</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-top-center</span>
+                    <div class="v-tooltip v-hover-block v-top-center" style="top: -70px;">
+                        <b>v-top-center</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-top-right</span>
+                    <div class="v-tooltip v-hover-block v-top-right" style="top: -70px;">
+                        <b>v-top-right</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-bottom-left</span>
+                    <div class="v-tooltip v-hover-block v-bottom-left" style="top: -70px;">
+                        <b>v-bottom-left</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+            </div>
+            <div class="v-box">
+                <div class="v-btn v-hover">
+                    <span>v-bottom-center</span>
+                    <div class="v-tooltip v-hover-block v-bottom-center" style="top: -70px;">
+                        <b>v-bottom-center</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-bottom-right</span>
+                    <div class="v-tooltip v-hover-block v-bottom-right" style="top: -70px;">
+                        <b>v-bottom-right</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-left-top</span>
+                    <div class="v-tooltip v-hover-block v-left-top" style="top:-70px;">
+                        <b>v-left-top</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-left-center</span>
+                    <div class="v-tooltip v-hover-block v-left-center" style="top:-70px;">
+                        <b>v-left-center</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+            </div>
+            <div class="v-box">
+                <div class="v-btn v-hover">
+                    <span>v-left-bottom</span>
+                    <div class="v-tooltip v-hover-block v-left-bottom" style="top:-70px;">
+                        <b>v-left-bottom</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-right-top</span>
+                    <div class="v-tooltip v-hover-block v-right-top" style="top:-70px;">
+                        <b>v-right-top</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-right-center</span>
+                    <div class="v-tooltip v-hover-block v-right-center" style="top:-70px;">
+                        <b>v-right-center</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+                <div class="v-btn v-hover">
+                    <span>v-right-bottom</span>
+                    <div class="v-tooltip v-hover-block v-right-bottom" style="top:-70px;">
+                        <b>v-right-bottom</b><br/>
+                        <span>Tooltip test</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
 
     
 

@@ -3,7 +3,7 @@
     {
         title: '浏览器检测',
         ename: 'support',
-        description: ''
+        description: '检测浏览器是否支持Jvase'
     } 
 }}
 
@@ -12,133 +12,18 @@
     
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">用法介绍</h2>
+            <p class="v-card-subtitle">
+                添加类 <code>.v-support</code> 至元素, 元素里面的内容默认是隐藏的, 如果浏览器不支持Jvase(如：IE9以下浏览器), 
+                则此元素会显示, 此类主要对不支持Jvase的浏览器产生提示作用.
+            </p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <p>用IE9以下版本浏览器浏览，将会提示不支持信息
+            <h1 class="v-support v-danger">你的浏览器不支持Jvase</h1>
         </div>
     </div>
 
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
 
     
 

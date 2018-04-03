@@ -1,9 +1,9 @@
 {{
     extend '../partial/layout'
     {
-        title: '标记',
+        title: '标签',
         ename: 'tag',
-        description: ''
+        description: '标记重要内容或者需要着重提示的内容.'
     } 
 }}
 
@@ -12,133 +12,69 @@
     
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">丝带</h2>
+            <p class="v-card-subtitle">
+                添加类 <code>.v-ribbon-left</code> 或者 <code>.v-ribbon-right</code> 至 <code>.v-tag</code> 即可，
+                <b>丝带的父容器容器的CSS属性需设置为：<code>position:relative</code> 或者是 <code>position:absolute</code></b>
+            </p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <div class="v-bgc-silver-dark v-inline-block v-relative" style="margin-right: 60px;margin-bottom:20px;">
+                <span class="v-tag v-ribbon-left" style="top:1rem">Left Ribbon</span>
+                <span class="v-tag v-ribbon-right" style="top:1rem">Right Ribbon</span>
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/note.png" width="320" height="120" />
+            </div>
+            <div class="v-bgc-silver-dark v-inline-block v-relative" style="margin-right: 60px;margin-bottom:20px;">
+                <span class="v-tag v-ribbon-left v-success" style="top:1rem">Success Ribbon</span>
+                <span class="v-tag v-ribbon-right v-warn" style="top:1rem">Warn Ribbon</span>
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/note.png" width="320" height="120" />
+            </div>
+            <div class="v-bgc-silver-dark v-inline-block v-relative" style="margin-right: 60px;margin-bottom:20px;">
+                <span class="v-tag v-ribbon-left v-danger" style="top:1rem">Danger Ribbon</span>
+                <span class="v-tag v-ribbon-right v-info" style="top:1rem">Info Ribbon</span>
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/note.png" width="320" height="120" />
+            </div>
+            <div class="v-bgc-silver-dark v-inline-block v-relative" style="margin-right: 60px;margin-bottom:20px;">
+                <span class="v-tag v-ribbon-left v-small" style="top:1rem">Small Ribbon</span>
+                <span class="v-tag v-ribbon-right" style="top:1rem">Default Ribbon</span>
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/note.png" width="320" height="120" />
+            </div>
+            <div class="v-bgc-silver-dark v-inline-block v-relative" style="margin-right: 60px;margin-bottom:20px;">
+                <span class="v-tag v-ribbon-left v-medium" style="top:1rem">Medium Ribbon</span>
+                <span class="v-tag v-ribbon-right v-large" style="top:1rem">Large Ribbon</span>
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/note.png" width="320" height="120" />
+            </div>
         </div>
     </div>
 
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">贴纸</h2>
+            <p class="v-card-subtitle">
+                添加类 <code>.use-sticker-left</code> 或者 <code>.use-sticker-right</code> 至 <code>.tag</code> 即可.
+            </p>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <span class="v-tag v-sticker-left">LEFT STICKER</span>
+            <span class="v-tag v-sticker-right">RIGHT STICKER</span>
+            <span class="v-tag v-info v-sticker-left">LEFT STICKER</span>
+            <span class="v-tag v-info v-sticker-right">RIGHT STICKER</span>
+            <hr>
+            
+            <span class="v-tag v-success v-sticker-left">LEFT STICKER</span>
+            <span class="v-tag v-success v-sticker-right">RIGHT STICKER</span>
+            <hr>
+            
+            <span class="v-tag v-medium v-danger v-sticker-left">LEFT STICKER</span>
+            <span class="v-tag v-medium v-danger v-sticker-right">RIGHT STICKER</span>
+            <hr>
+            
+            <span class="v-tag v-large v-warn v-sticker-left">LEFT STICKER</span>
+            <span class="v-tag v-large v-warn v-sticker-right">RIGHT STICKER</span>
         </div>
     </div>
 
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
+    
 
     
 

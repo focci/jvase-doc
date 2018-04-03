@@ -136,11 +136,11 @@
                                 ename: 'Switch'
                             },
                             {
-                                title: '标签',
+                                title: 'Tab',
                                 ename: 'Tab'
                             },
                             {
-                                title: '标记',
+                                title: '标签',
                                 ename: 'Tag'
                             },
                             {
