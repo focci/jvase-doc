@@ -47,8 +47,7 @@
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">外边框</h2>
-                        <p class="v-card-subtitle">添加类 <code>.v-outlined</code> 至 <code>.v-btn</code></p>
-                        <p><span class="v-badge v-warn v-small">注</span> 不能与类 <code>.v-white</code> 同时使用.</p>
+                        <p class="v-card-subtitle">添加类 <code>.v-outlined</code> 至 <code>.v-btn</code>，<b>不能与类 <code>.v-white</code> 同时使用.</b></p>
                     </div>
                     <div class="v-card-body">
                         <button class="v-btn v-outlined">Success</button>

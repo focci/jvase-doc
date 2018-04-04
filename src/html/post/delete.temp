@@ -45,22 +45,8 @@
                         </small>
                     </div>
                     <div class="v-card-body">
-                        <button class="v-btn v-small">按钮 <i class="v-del v-circle"></i></button>
                         <button class="v-btn">按钮 <i class="v-del v-circle"></i></button>
-                        <button class="v-btn v-medium">按钮 <i class="v-del v-circle"></i></button>
-                        <button class="v-btn v-large">按钮 <i class="v-del v-circle"></i></button>
-                        <button class="v-btn v-large v-success">按钮 <i class="v-del v-circle"></i></button>
-                        <hr>
-
-                        <span class="v-badge">Badge <button class="v-del"></button></span>
-                        <span class="v-badges">
-                            <span class="v-badge v-primary">Badge</span>
-                            <span class="v-badge">
-                                <span class="v-icon">
-                                    <button class="v-del"></button>
-                                </span>
-                            </span>
-                        </span>
+                        <button class="v-btn v-success">按钮 <i class="v-del v-circle"></i></button>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 {{
     extend '../partial/layout'
     {
-        title: '切换',
+        title: '选项卡',
         ename: 'tab',
-        description: ''
+        description: '不同风格的选项卡'
     } 
 }}
 
@@ -12,11 +12,18 @@
     
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <h2 class="v-card-title">使用方法</h2>
+            <small class="v-card-subtitle">
+                添加类 <code>.tabs</code> 到 <code>&lt;ul&gt;</code> 标签，默认下面有一条横线.
+            </small>
         </div>
         <div class="v-card-body">
-            CARDBODY
+            <ul class="v-tab">
+                <li class="v-active">首页</li>
+                <li>选项A</li>
+                <li>选项B</li>
+                <li disabled>已被禁用</li>
+            </ul>
         </div>
     </div>
 

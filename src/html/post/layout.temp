@@ -112,105 +112,27 @@
         </div>
     </div>
 
-    <h1 class="v-article-header">Aside尺寸</h1>
-    <p class="v-article-meta">除了默认尺寸外，还提供其它四种不同的尺寸大小：<code>.v-narrow</code>、
-        <code>.v-small</code>、<code>.v-medium</code>、<code>.v-large</code> 来控制Aside的宽度.
-    </p>
+    <h1 class="v-article-header">Aside窄边</h1>
+    <p class="v-article-meta">除了默认尺寸外，还提供窄边尺寸：<code>.v-narrow</code> 来控制Aside的宽度.</p>
 
-    <div class="v-grid-fluid v-row-gapless">
-        <div class="v-row">
-            <div class="v-col-xs-12 v-col-lg-6">
-                <div class="v-card">
-                    <div class="v-card-header">
-                        <h2 class="v-card-title">Narrow</h2>
-                        <p class="v-card-subtitle">
-                            添加类 <code>.v-narrow</code> 至 <code>.v-layout</code>.
-                        </p>
-                    </div>
-                    <div class="v-card-body">
-                        <div class="v-layout v-narrow" style="height:240px;">
-                            <div class="v-layout-aside v-bgc-gray v-txt-white">
-                                <div class="v-middle v-center">ASIDE</div>
-                            </div>
-                            <div class="v-layout-header v-bgc-gray-light">
-                                <div class="v-middle v-center">HEADER</div>
-                            </div>
-                            <div class="v-layout-content v-bgc-silver-dark">
-                                <div class="v-middle v-center">CONTENT</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="v-col-xs-12 v-col-lg-6">
-                <div class="v-card">
-                    <div class="v-card-header">
-                        <h2 class="v-card-title">Small</h2>
-                        <p class="v-card-subtitle">
-                            添加类 <code>.v-small</code> 至 <code>.v-layout</code>.
-                        </p>
-                    </div>
-                    <div class="v-card-body">
-                        <div class="v-layout v-small" style="height:240px;">
-                            <div class="v-layout-aside v-bgc-gray v-txt-white">
-                                <div class="v-middle v-center">ASIDE</div>
-                            </div>
-                            <div class="v-layout-header v-bgc-gray-light">
-                                <div class="v-middle v-center">HEADER</div>
-                            </div>
-                            <div class="v-layout-content v-bgc-silver-dark">
-                                <div class="v-middle v-center">CONTENT</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <div class="v-card v-col-xs-12 v-col-lg-6">
+        <div class="v-card-header">
+            <h2 class="v-card-title">Narrow</h2>
+            <p class="v-card-subtitle">
+                添加类 <code>.v-narrow</code> 至 <code>.v-layout</code>.
+            </p>
         </div>
-        <div class="v-row">
-            <div class="v-col-xs-12 v-col-lg-6">
-                <div class="v-card">
-                    <div class="v-card-header">
-                        <h2 class="v-card-title">Medium</h2>
-                        <p class="v-card-subtitle">
-                            添加类 <code>.v-medium</code> 至 <code>.v-layout</code>.
-                        </p>
-                    </div>
-                    <div class="v-card-body">
-                        <div class="v-layout v-medium" style="height:240px;">
-                            <div class="v-layout-aside v-bgc-gray v-txt-white">
-                                <div class="v-middle v-center">ASIDE</div>
-                            </div>
-                            <div class="v-layout-header v-bgc-gray-light">
-                                <div class="v-middle v-center">HEADER</div>
-                            </div>
-                            <div class="v-layout-content v-bgc-silver-dark">
-                                <div class="v-middle v-center">CONTENT</div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="v-card-body">
+            <div class="v-layout v-narrow" style="height:240px;">
+                <div class="v-layout-aside v-bgc-gray v-txt-white">
+                    <div class="v-middle v-center">ASIDE</div>
                 </div>
-            </div>
-            <div class="v-col-xs-12 v-col-lg-6">
-                <div class="v-card">
-                    <div class="v-card-header">
-                        <h2 class="v-card-title">Large</h2>
-                        <p class="v-card-subtitle">
-                            添加类 <code>.v-large</code> 至 <code>.v-layout</code>.
-                        </p>
-                    </div>
-                    <div class="v-card-body">
-                        <div class="v-layout v-large" style="height:240px;">
-                            <div class="v-layout-aside v-bgc-gray v-txt-white">
-                                <div class="v-middle v-center">ASIDE</div>
-                            </div>
-                            <div class="v-layout-header v-bgc-gray-light">
-                                <div class="v-middle v-center">HEADER</div>
-                            </div>
-                            <div class="v-layout-content v-bgc-silver-dark">
-                                <div class="v-middle v-center">CONTENT</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="v-layout-header v-bgc-gray-light">
+                    <div class="v-middle v-center">HEADER</div>
+                </div>
+                <div class="v-layout-content v-bgc-silver-dark">
+                    <div class="v-middle v-center">CONTENT</div>
                 </div>
             </div>
         </div>

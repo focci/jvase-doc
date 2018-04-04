@@ -17,7 +17,7 @@
     <style>body{overflow:hidden}.v-layout-aside,.v-layout-content{overflow-y:auto;}</style>
 </head>
 <body class="v-bgc-silver">
-    <div class="v-layout v-medium">
+    <div class="v-layout">
         {{ include '../partial/header' }}
         {{ if(showSlideBar !== false) { }}
             {{ include '../partial/slide' }}

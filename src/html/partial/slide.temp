@@ -68,12 +68,16 @@
                                 ename: 'Delete'
                             },
                             {
-                                title: '表单',
-                                ename: 'Form'
-                            },
-                            {
                                 title: '图标',
                                 ename: 'Icon'
+                            },
+                            {
+                                title: '标签',
+                                ename: 'Tag'
+                            },
+                            {
+                                title: '表单',
+                                ename: 'Form'
                             },
                             {
                                 title: '表格',
@@ -142,12 +146,8 @@
                                 ename: 'Switch'
                             },
                             {
-                                title: 'Tab',
+                                title: '选项卡',
                                 ename: 'Tab'
-                            },
-                            {
-                                title: '标签',
-                                ename: 'Tag'
                             },
                             {
                                 title: '气泡',
