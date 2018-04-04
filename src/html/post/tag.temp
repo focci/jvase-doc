@@ -51,26 +51,44 @@
         <div class="v-card-header">
             <h2 class="v-card-title">贴纸</h2>
             <p class="v-card-subtitle">
-                添加类 <code>.use-sticker-left</code> 或者 <code>.use-sticker-right</code> 至 <code>.tag</code> 即可.
+                添加类 <code>.v-sticker-left</code> 或者 <code>.v-sticker-right</code> 至 <code>.v-tag</code> 即可.
             </p>
         </div>
         <div class="v-card-body">
-            <span class="v-tag v-sticker-left">LEFT STICKER</span>
-            <span class="v-tag v-sticker-right">RIGHT STICKER</span>
-            <span class="v-tag v-info v-sticker-left">LEFT STICKER</span>
-            <span class="v-tag v-info v-sticker-right">RIGHT STICKER</span>
-            <hr>
-            
-            <span class="v-tag v-success v-sticker-left">LEFT STICKER</span>
-            <span class="v-tag v-success v-sticker-right">RIGHT STICKER</span>
-            <hr>
-            
-            <span class="v-tag v-medium v-danger v-sticker-left">LEFT STICKER</span>
-            <span class="v-tag v-medium v-danger v-sticker-right">RIGHT STICKER</span>
-            <hr>
-            
-            <span class="v-tag v-large v-warn v-sticker-left">LEFT STICKER</span>
-            <span class="v-tag v-large v-warn v-sticker-right">RIGHT STICKER</span>
+            <div class="v-grid-fluid">
+                <div class="v-row">
+                    <div class="v-col-xs-12 v-col-sm-6">
+                        <span class="v-tag v-sticker-left">Left Sticker</span>
+                        <span class="v-tag v-sticker-left">Left Sticker</span>
+                        <span class="v-tag v-sticker-right">Right Sticker</span>
+                        <hr>
+                        <span class="v-tag v-info v-sticker-left">Info Sticker</span>
+                        <span class="v-tag v-info v-sticker-right">Info Sticker</span>
+                        <hr>
+                        <span class="v-tag v-success v-sticker-left">Success Sticker</span>
+                        <span class="v-tag v-success v-sticker-right">Success Sticker</span>
+                        <hr>
+                        <span class="v-tag v-danger v-sticker-left">Danger Sticker</span>
+                        <span class="v-tag v-danger v-sticker-right">Danger Sticker</span>
+                        <hr>
+                        <span class="v-tag v-warn v-sticker-left">Warn Sticker</span>
+                        <span class="v-tag v-warn v-sticker-right">Warn Sticker</span>
+                    </div>
+                    <div class="v-col-xs-12 v-col-sm-6">
+                        <span class="v-tag v-success v-small v-sticker-left">Small Sticker</span>
+                        <span class="v-tag v-success v-small v-sticker-right">Small Sticker</span>
+                        <hr>
+                        <span class="v-tag v-success v-sticker-left">Default Sticker</span>
+                        <span class="v-tag v-success v-sticker-right">Default Sticker</span>
+                        <hr>
+                        <span class="v-tag v-success v-medium v-sticker-left">Medium Sticker</span>
+                        <span class="v-tag v-success v-medium v-sticker-right">Medium Sticker</span>
+                        <hr>
+                        <span class="v-tag v-success v-large v-sticker-left">Large Sticker</span>
+                        <span class="v-tag v-success v-large v-sticker-right">Large Sticker</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

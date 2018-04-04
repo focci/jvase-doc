@@ -4,8 +4,8 @@
             {{
                 var menu_data  = [
                     {
-                        title: '常规',
-                        ename: 'General',
+                        title: '入门',
+                        ename: 'Start',
                         children: [
                             {
                                 title: '介绍',
@@ -22,10 +22,24 @@
                             {
                                 title: '自定义',
                                 ename: 'Customized'
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        title: '常规',
+                        ename: 'General',
+                        children: [
                             {
                                 title: '颜色',
                                 ename: 'Color'
+                            },
+                            {
+                                title: '基础',
+                                ename: 'Base'
+                            },
+                            {
+                                title: '排版',
+                                ename: 'Typography'
                             },
                             {
                                 title: '栅栏',
@@ -34,14 +48,6 @@
                             {
                                 title: '布局',
                                 ename: 'Layout'
-                            },
-                            {
-                                title: '排版',
-                                ename: 'Typography'
-                            },
-                            {
-                                title: '扩展',
-                                ename: 'Expand'
                             }
                         ]
                     },

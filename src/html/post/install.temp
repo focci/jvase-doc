@@ -3,7 +3,7 @@
     {
         title: '安装',
         ename: 'install',
-        description: ''
+        description: '常见的几种引入方式'
     } 
 }}
 
@@ -12,8 +12,33 @@
     
     <div class="v-card">
         <div class="v-card-header">
+            <h2 class="v-card-title">NPM</h2>
+            <p class="v-card-subtitle">
+                推荐使用NPM的安装方式，它能更好地配合 <a href="https://gulpjs.com/">Gulp</a> 进行使用.
+            </p>
+        </div>
+        <div class="v-card-body">
+            <pre>npm install --save jvase</pre>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">CDN</h2>
+            <p class="v-card-subtitle">
+                可以通过 <a href="https://unpkg.com/jvase/dist/">https://unpkg.com/jvase/dist/</a> 来浏览最新版本的资源文件，通过引入CSS文件来添加Jvase.
+            </p>
+        </div>
+        <div class="v-card-body">
+            <pre>&lt;!-- 最新版本的 Jvase 核心 CSS 文件 --><br/>&lt;link rel="stylesheet" href="https://unpkg.com/jvase/dist/jvase.min.css" />
+            </pre>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -23,7 +48,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -33,7 +58,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -43,7 +68,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -53,7 +78,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -63,7 +88,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -73,7 +98,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -83,7 +108,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -93,7 +118,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -103,7 +128,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -113,27 +138,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
