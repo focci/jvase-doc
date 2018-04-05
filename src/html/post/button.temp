@@ -11,7 +11,7 @@
     
     <div class="v-grid-fluid">
         <div class="v-row">
-            <div class="v-col-xs-12 v-col-md-7">
+            <div class="v-col-xs-12 v-col-lg-7">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">用法介绍</h2>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <div class="v-col-xs-12 v-col-md-5">
+            <div class="v-col-xs-12 v-col-lg-5">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">按钮组</h2>

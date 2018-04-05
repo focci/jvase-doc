@@ -12,7 +12,7 @@
 
     <div class="v-grid-fluid">
         <div class="v-row">
-            <div class="v-col-xs-8">
+            <div class="v-col-xs-12 v-col-lg-8">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">用法介绍</h2>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="v-col-xs-4">
+            <div class="v-col-xs-12 v-col-lg-4">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">清除行间距</h2>

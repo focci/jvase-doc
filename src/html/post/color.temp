@@ -11,7 +11,7 @@
 
     <div class="v-grid-fluid">
         <div class="v-row">
-            <div class="v-col-xs-12 v-col-md-8">
+            <div class="v-col-xs-12 v-col-lg-8">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">主色调</h2>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="v-col-xs-12 v-col-md-4">
+            <div class="v-col-xs-12 v-col-lg-4">
                 <div class="v-card">
                     <div class="v-card-header">
                         <h2 class="v-card-title">应用</h2>
