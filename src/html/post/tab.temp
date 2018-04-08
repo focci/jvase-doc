@@ -13,15 +13,32 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">使用方法</h2>
-            <small class="v-card-subtitle">
+            <p class="v-card-subtitle">
                 添加类 <code>.tabs</code> 到 <code>&lt;ul&gt;</code> 标签，默认下面有一条横线.
-            </small>
+            </p>
         </div>
         <div class="v-card-body">
             <ul class="v-tab">
                 <li class="v-active">首页</li>
-                <li>选项A</li>
-                <li>选项B</li>
+                <li><a href="javascript:;">选项A</a></li>
+                <li><a href="javascript:;">选项B</a></li>
+                <li disabled>已被禁用</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">边框</h2>
+            <p class="v-card-subtitle">
+                添加类 <code>.v-boxed</code> 可以显示多条边框.
+            </p>
+        </div>
+        <div class="v-card-body">
+            <ul class="v-tab v-boxed">
+                <li class="v-active">首页</li>
+                <li><a href="javascript:;">选项A</a></li>
+                <li><a href="javascript:;">选项B</a></li>
                 <li disabled>已被禁用</li>
             </ul>
         </div>
@@ -30,7 +47,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -40,7 +57,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -50,7 +67,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -60,7 +77,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -70,7 +87,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -80,7 +97,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -90,7 +107,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -100,7 +117,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -110,7 +127,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -120,7 +137,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
@@ -130,17 +147,7 @@
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
+            <p class="v-card-subtitle">SUBTITLE</p>
         </div>
         <div class="v-card-body">
             CARDBODY
